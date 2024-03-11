@@ -3,40 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Image Gallery</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
+  <title>Image Gallery 01</title>
+  <link rel="stylesheet" href="style.css">  
 </head>
 <body>
 
     <div class="full-img" id="fullImgBox">
-      <img id="fullImg" src="images/img1.jpg" alt="">
-      <span onclick="closeFullImg()">X</span>
+      <img id="mainimg" src="images/img1.jpg" alt="">
+      <span id="closeImg">X</span>
     </div>
   
     <div class="img-gallery">
-    <img src="images/img1.jpg" alt="" onclick="openFullImag(this.src)">
-    <img src="images/img2.jpg" alt="" onclick="openFullImag(this.src)">
-    <img src="images/img3.jpg" alt="" onclick="openFullImag(this.src)">
-    <img src="images/img4.jpg" alt="" onclick="openFullImag(this.src)">
-    <img src="images/img5.jpg" alt="" onclick="openFullImag(this.src)">
-    <img src="images/img6.jpg" alt="" onclick="openFullImag(this.src)">
-    <img src="images/img7.jpg" alt="" onclick="openFullImag(this.src)">
-    <img src="images/img8.jpg" alt="" onclick="openFullImag(this.src)">
+
+      <img id="Thumb" src="images/img1.jpg" alt="" onclick="activeThumb(this.src)">
+      <img id="Thumb" src="images/img2.jpg" alt="" onclick="activeThumb(this.src)">
+      <img id="Thumb" src="images/img3.jpg" alt="" onclick="activeThumb(this.src)">
+      <img id="Thumb" src="images/img4.jpg" alt="" onclick="activeThumb(this.src)">
+      <img id="Thumb" src="images/img5.jpg" alt="" onclick="activeThumb(this.src)">
+      <img id="Thumb" src="images/img6.jpg" alt="" onclick="activeThumb(this.src)">
+      <img id="Thumb" src="images/img7.jpg" alt="" onclick="activeThumb(this.src)">
+      <img id="Thumb" src="images/img8.jpg" alt="" onclick="activeThumb(this.src)">
     </div>
 
-    <script>
-      var fullImgBox = document.getElementById("fullImgBox");
-      var fullImg = document.getElementById("fullImg");
-
-      function openFullImag(pic) {
-        fullImgBox.style.display = "flex";
-        fullImg.src = pic;
-      }
-       function closeFullImg() {
-        fullImgBox.style.display = "none";
-      }
-
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
